@@ -22,25 +22,25 @@ function gotresults(error, results) {
         console.log("error");
     } else {
         if (results[0].label == "Clap") {
-            img1.src = "../media/1gif.gif";
-            img2.src = "../media/2png.png";
-            img3.src = "../media/3png.png";
-            img4.src = "../media/4png.png";
+            img1.src = "1gif.gif";
+            img2.src = "2png.png";
+            img3.src = "3png.png";
+            img4.src = "4png.png";
         } else if (results[0].label == "Snap") {
-            img1.src = "../media/1png.png";
-            img2.src = "../media/2gif.gif";
-            img3.src = "../media/3png.png";
-            img4.src = "../media/4png.png";
+            img1.src = "1png.png";
+            img2.src = "2gif.gif";
+            img3.src = "3png.png";
+            img4.src = "4png.png";
         } else if (results[0].label == "Bell") {
-            img1.src = "../media/1png.png";
-            img2.src = "../media/2png.png";
-            img3.src = "../media/3gif.gif";
-            img4.src = "../media/4png.png";
+            img1.src = "1png.png";
+            img2.src = "2png.png";
+            img3.src = "3gif.gif";
+            img4.src = "4png.png";
         } else if (results[0].label == "Background Noise") {
-            img1.src = "../media/1png.png";
-            img2.src = "../media/2png.png";
-            img3.src = "../media/3png.png";
-            img4.src = "../media/4gif.gif";
+            img1.src = "1png.png";
+            img2.src = "2png.png";
+            img3.src = "3png.png";
+            img4.src = "4gif.gif";
         };
         document.querySelector("#container").style.display="flex";
         res.innerHTML=results[0].label;
